@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+#biggerContainer {
+    display: grid;
+}
+
+#container {
+    display: grid;
+    height: 800px;
+    width: 800px;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    
+}
+
+.box {
+    border: black 1px solid;
+}
+
+button {
+    justify-self: center;
+    display: inline;
+    margin: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
