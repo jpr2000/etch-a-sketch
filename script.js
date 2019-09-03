@@ -6,13 +6,19 @@ function createBoxes (s) {
     let container = document.createElement("div");
     container.setAttribute("id", "container");
     
+    let buttonContainer = document.createElement("div");
+    buttonContainer.setAttribute("id", "buttonContainer");
+
     let resetButton = document.createElement("button")
     resetButton.textContent = "Reset";
-    biggerContainer.appendChild(resetButton);
+    buttonContainer.appendChild(resetButton);
+    resetButton.setAttribute("class", "button");
 
     let partyButton = document.createElement("button")
     partyButton.textContent = "Party Mode";
-    biggerContainer.appendChild(partyButton);
+    partyButton.setAttribute("class", "button");
+    buttonContainer.appendChild(partyButton);
+    biggerContainer.appendChild(buttonContainer);
     
     
     for (let i = 0; i < s ** 2; i++) {
