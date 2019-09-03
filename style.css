@@ -40,6 +40,10 @@ button {
     border: none;
 }
 
+.top {
+    margin-bottom: 0px;
+}
+
 .button {
     display: inline-block;
 }

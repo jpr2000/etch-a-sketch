@@ -12,7 +12,8 @@ function createBoxes (s) {
     let resetButton = document.createElement("button")
     resetButton.textContent = "Reset";
     buttonContainer.appendChild(resetButton);
-    resetButton.setAttribute("class", "button");
+    resetButton.className = "button " + "top";
+    // resetButton.classList.add("top");
 
     let partyButton = document.createElement("button")
     partyButton.textContent = "Party Mode";
